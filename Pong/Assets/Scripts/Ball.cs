@@ -9,8 +9,7 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rigidBall;
 
     // Ball launch parameters
-    public int ballx = 20;
-    public int bally = -15;
+    public int ballForce = 30;
 
     // Start is called before the first frame update
     void Start()
@@ -63,13 +62,14 @@ public class Ball : MonoBehaviour
     // This is the default for now
     void RandomLaunch()
     {
-        float random = Random.Range(0, 2);
-        if (random < 1)
+        float randomX = Random.Range(0, 2);
+        int randomY = Random.Range(-15, 15);
+        if (randomX < 1)
         {
-            LaunchBall(ballx, bally);
+            LaunchBall(ballForce, randomY);
         } else
         {
-            LaunchBall(-ballx, bally);
+            LaunchBall(-ballForce, randomY);
         }
     }
 }
