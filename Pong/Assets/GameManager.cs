@@ -30,8 +30,7 @@ public class GameManager : MonoBehaviour
 
         if (GUI.Button(new Rect(Screen.width / 2 - 60, 35, 120, 50), "Restart"))
         {
-            Player1Score = 0;
-            Player2Score = 0;
+            ScoreReset();
             ball.SendMessage("RestartGame", 0.5f, SendMessageOptions.RequireReceiver);
         }
 
