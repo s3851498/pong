@@ -20,9 +20,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""813682f8-2c51-45e9-829b-e59d685b770e"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -56,17 +56,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""50573134-3e6b-4470-885d-38e9214e603d"",
                     ""path"": ""<Gamepad>/leftStick/y"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""1106a096-ad5b-4ec8-bc84-62fe26431ee4"",
-                    ""path"": ""<Gamepad>/dpad/y"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
